@@ -37,3 +37,6 @@ tags
 # Build and testing directories
 build/
 working/
+
+# Environments
+.venv

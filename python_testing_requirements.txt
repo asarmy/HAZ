@@ -1,0 +1,5 @@
+pytest
+pytest-dependency
+numpy
+pre-commit
+black

@@ -1,0 +1,38 @@
+Scenario_01_2798.inp                                                            
+  ***** Input Parameters *****
+    Jcalc      =     2798
+    Mag        =    7.400
+    Ftype      =     0.00
+    Dip        =   90.000
+    HWFlag     =        0
+    Vs30m      =  400.000
+     Vs30m -- > measured 
+    Hypodepth  =    7.200
+    Width      =    8.000
+    DepthVs10  =    0.360
+    DepthVs15  =    1.000
+    DepthVs25  =    2.800
+    Depthtop   =    0.000
+  Period(s)   Mag    Rrup      Rjb      SeisDist HypoDist    Rx         Ry0          SA(g)         Sigma   Const1  Const2  SigAdd      Phi       Tau              Per_Notes                     GMModel                     Sigma Model
+     0.010   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.7072E+00  0.5224  0.0000  0.0000  0.0000  0.4655  0.2371    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.020   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.7136E+00  0.5257  0.0000  0.0000  0.0000  0.4669  0.2417    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.030   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.7480E+00  0.5365  0.0000  0.0000  0.0000  0.4769  0.2458    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.050   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.8686E+00  0.5391  0.0000  0.0000  0.0000  0.4805  0.2444    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.075   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1061E+01  0.5329  0.0000  0.0000  0.0000  0.4771  0.2375    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.100   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1217E+01  0.5318  0.0000  0.0000  0.0000  0.4771  0.2351    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.150   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1429E+01  0.5411  0.0000  0.0000  0.0000  0.4852  0.2395    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.200   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1573E+01  0.5551  0.0000  0.0000  0.0000  0.4965  0.2482    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.250   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1648E+01  0.5691  0.0000  0.0000  0.0000  0.5076  0.2572    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.300   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1663E+01  0.5815  0.0000  0.0000  0.0000  0.5175  0.2652    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.400   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1616E+01  0.6015  0.0000  0.0000  0.0000  0.5335  0.2779    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1534E+01  0.6173  0.0000  0.0000  0.0000  0.5461  0.2877    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     0.750   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1228E+01  0.6461  0.0000  0.0000  0.0000  0.5695  0.3051    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     1.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.9543E+00  0.6638  0.0000  0.0000  0.0000  0.5842  0.3152    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     1.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.6061E+00  0.6827  0.0000  0.0000  0.0000  0.6006  0.3245    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     2.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.4332E+00  0.6868  0.0000  0.0000  0.0000  0.6027  0.3292    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     3.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.2658E+00  0.6875  0.0000  0.0000  0.0000  0.5992  0.3371    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     4.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1741E+00  0.6867  0.0000  0.0000  0.0000  0.5957  0.3416    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     5.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1167E+00  0.6838  0.0000  0.0000  0.0000  0.5913  0.3435    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+     7.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.5356E-01  0.6778  0.0000  0.0000  0.0000  0.5829  0.3459    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+    10.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.2994E-01  0.6736  0.0000  0.0000  0.0000  0.5771  0.3474    Defined   CY_NGAWest2_2013-Hor,Measured Vs30m                                               CY_NGAWest2_2013-Hor,Measured Vs30m                                             
+

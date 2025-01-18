@@ -1,0 +1,38 @@
+Scenario_01_2836.inp                                                            
+  ***** Input Parameters *****
+    Jcalc      =     2836
+    Mag        =    7.400
+    Ftype      =     0.00
+    Dip        =   90.000
+    HWFlag     =        0
+    Vs30m      =  400.000
+     Vs30m -- > measured 
+    Hypodepth  =    7.200
+    Width      =    8.000
+    DepthVs10  =    0.360
+    DepthVs15  =    1.000
+    DepthVs25  =    2.800
+    Depthtop   =    0.000
+  Period(s)   Mag    Rrup      Rjb      SeisDist HypoDist    Rx         Ry0          SA(g)         Sigma   Const1  Const2  SigAdd      Phi       Tau              Per_Notes                     GMModel                     Sigma Model
+     0.010   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.4852E+00  0.4973  0.0000  0.0000  0.0000  0.4273  0.2543    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.020   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.5105E+00  0.4986  0.0000  0.0000  0.0000  0.4294  0.2535    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.030   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.5648E+00  0.5038  0.0000  0.0000  0.0000  0.4291  0.2640    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.050   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.6911E+00  0.5142  0.0000  0.0000  0.0000  0.4306  0.2811    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.075   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.7853E+00  0.5429  0.0000  0.0000  0.0000  0.4404  0.3175    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.100   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.8310E+00  0.5522  0.0000  0.0000  0.0000  0.4468  0.3245    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.150   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.8833E+00  0.5347  0.0000  0.0000  0.0000  0.4496  0.2895    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.200   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.8758E+00  0.5336  0.0000  0.0000  0.0000  0.4692  0.2540    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.250   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.9541E+00  0.5385  0.0000  0.0000  0.0000  0.4779  0.2483    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.300   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.9848E+00  0.5710  0.0000  0.0000  0.0000  0.5145  0.2477    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.400   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1028E+01  0.6100  0.0000  0.0000  0.0000  0.5628  0.2354    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.9770E+00  0.6444  0.0000  0.0000  0.0000  0.5948  0.2479    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     0.750   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.8254E+00  0.7091  0.0000  0.0000  0.0000  0.6308  0.3239    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     1.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.6979E+00  0.7204  0.0000  0.0000  0.0000  0.6280  0.3530    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     1.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.4750E+00  0.7231  0.0000  0.0000  0.0000  0.6030  0.3990    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     2.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.3468E+00  0.7112  0.0000  0.0000  0.0000  0.5880  0.4000    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     3.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.2345E+00  0.7127  0.0000  0.0000  0.0000  0.5780  0.4170    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     4.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1583E+00  0.6833  0.0000  0.0000  0.0000  0.5590  0.3930    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     5.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.1139E+00  0.6934  0.0000  0.0000  0.0000  0.5510  0.4210    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+     7.500   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.4880E-01  0.7000  0.0000  0.0000  0.0000  0.5460  0.4380    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+    10.000   7.400     0.100     0.100     0.100     0.100     0.100  -999.000  0.2954E-01  0.6976  0.0000  0.0000  0.0000  0.5430  0.4380    Defined   CB_NGAWest2_2013-Hor,Calif                                                        CB_NGAWest2_2013-Hor,Calif                                                      
+
