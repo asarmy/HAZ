@@ -11,6 +11,7 @@ c     Write Program information to the screen.
       write (*,*) '*      Seismic Hazard Code      *'
       write (*,*) '*         Release 45.3          *'
       write (*,*) '*          March, 2023          *'
+      write (*,*) '* Modified January 2024: 45.3.1 *'
       write (*,*) '*********************************'
       write (*,*)
 

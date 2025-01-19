@@ -48,7 +48,7 @@ message ("--> CMAKE_Fortran_FLAGS: " ${CMAKE_Fortran_FLAGS})
 
 # build executables
 file (GLOB SOURCES src/*.f)
-set (TARGET "HAZ")
+set (TARGET "HAZ45.3.1")
 
 add_executable (${TARGET} ${SOURCES})
 set_target_properties(${TARGET} PROPERTIES LINKER_LANGUAGE Fortran)
