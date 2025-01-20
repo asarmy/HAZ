@@ -13,7 +13,7 @@
 
 > DONE; also added to CalcDist and Directivity subroutine calls in `01_HAZ_MAIN2.f`
 
-> A note on `cldist.f`: new subroutines (new relative to `14_CLDIST.f` appear not to be used in 
+> A note on `cldist.f`: new subroutines (new relative to `14_CLDIST.f`) appear not to be used in 
 > Jeff B files nor the other HAZ files, so they are not moved over: CalcPlaneDist, CalcPlaneDist2
 
 - Note, T and U have origin at the first along strike coordinate of the rupture surface trace, that 
@@ -68,7 +68,7 @@
 
 > Note that previous minimum period was 0.5, changed to 0.1 for BEA24.
 
-> Note that other 2020 vintage Bayless models (31, 32; FN and FP) in `Directivity.f` were not added 
+> Note that other 2013 vintage Bayless models (31, 32; FN and FP) in `Directivity.f` were not added 
 > to `16_Directivity.f`.
 
 > Call to `interp` replaced with `S24_interp`
