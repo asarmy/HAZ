@@ -11,7 +11,7 @@ c     Write Program information to the screen.
       write (*,*) '*      Seismic Hazard Code      *'
       write (*,*) '*         Release 45.3          *'
       write (*,*) '*          March, 2023          *'
-      write (*,*) '* Modified January 2024: 45.3.1 *'
+      write (*,*) '* Modified January 2025: 45.3.2 *'
       write (*,*) '*********************************'
       write (*,*)
 
@@ -303,7 +303,8 @@ c            Pass along fault grid locations for calculation of HW and Rx values
      3             fltgrid_x2, fltgrid_y2, fltgrid_z2, fltgrid_x3, fltgrid_y3, fltgrid_z3,
      4             fltgrid_x4, fltgrid_y4, fltgrid_z4, fltGrid_Rrup, fltGrid_Rjb, dip, dipS7,
      5             distS7, HWFlag, n1, n2, icellRupstrike, icellRupdip, hypoDepth, distJB,
-     6             distRup, ZTOR, distSeismo, distepi, disthypo, dipavgd, Rx, Ry, Ry0)
+     6             distRup, ZTOR, distSeismo, distepi, disthypo, dipavgd, Rx, Ry, Ry0,
+     7             Global_T, Global_U)
 
 c            Set minimum distances for output files.
              call S14_Set_MinDist (sourceType(iFlt), iFlt, iFltWidth, distRup, distJB, distSeismo,
@@ -449,18 +450,28 @@ c               Set default for no randomization of hypocenters
                 pHypoZ = 1.
                 nHypoZStep = 1
 
-C               Application of Directivity model.
-                if ( fltDirect(iFlt) .eq. 1 .and. dirflag(iProb) .ge. 1
-     1              .and. mag .gt. 5.6 .and. specT(iProb) .ge. 0.50 ) then
+C               Application of Directivity model. 
+                if ( fltDirect(iFlt) .eq. 0 ) then ! no directivity for this fault
+                dirFlag1 = 0
+                elseif ( dirflag(iProb) .ge. 40 .and. dirflag(iProb) .le. 41
+     1              .and. mag .ge. 6.0 .and. mag .le. 8.0 
+     2              .and. specT(iProb) .ge. 0.10 ) then ! directivity for Bea24 model (dirflag=40 or 41)
                  dirFlag1 = 1
-                 if ( dirflag(iProb) .lt. 100 ) then
+                   nHypoX = 100
+                   nHypoZ = 1
+                   pHypoX = 1./ 100.
+                   pHypoZ = 1.
+                elseif ( dirflag(iProb) .ge. 1
+     1              .and. mag .gt. 5.6 .and. specT(iProb) .ge. 0.50 ) then ! direc for older models 
+                 dirFlag1 = 1
+                 if ( dirflag(iProb) .lt. 100 ) then ! hypocenters for non-JWL model. 1 hypo for JWL
                    nHypoX = 9
                    nHypoZ = 9
                    pHypoX = 1./ 9.
                    pHypoZ = 1./ 9.
                  endif
                 else
-                 dirFlag1 = 0
+                dirFlag1 = 0
                 endif
 
 c               Loop over hypocenter location along strike (aleatory)
@@ -477,7 +488,7 @@ C                 Call to the rupture directivity Subroutine if applicable
      1                 x0, y0, z0, Rx, Ry, Ry0, mag, ftype(iFlt,iFtype), RupWidth,
      2                 RupLen, dipavgd, HWflag, dirMed, dirSigma, fltgrid_x,
      3                 fltgrid_y, fltgrid_z, n1, n2, fs, fd, dpp_flag,
-     4                 iLocX, iLocY)
+     4                 iLocX, iLocY, Global_T, Global_U)
 
 c                       write (44,'( 6f8.2 )') mag, RupLen, fs, fd, dirMed, dirSigma
 

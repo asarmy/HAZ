@@ -15,6 +15,8 @@ c          goto 100
           goto 100
         elseif (dirflag .eq. 106) then
           goto 100
+        elseif (dirflag .eq. 40 .or. dirflag .eq. 41) then
+          goto 100
         else
           write (*,*) 'Invalid directivity flag in run file.'
           stop 99
@@ -31,7 +33,7 @@ c  -------------------------------------------------------------------
      1                 Rx, Ry, Ry0, mag, ftype, RupWidth, RupLength, 
      2                 dipavgd, HWflag, dirMed, dirSigma, fltgrid_x, 
      3                 fltgrid_y, fltgrid_z, n1, n2, fs, fd, dpp_flag, 
-     4                 iLocAS, iLocDD)
+     4                 iLocAS, iLocDD, Global_T, Global_U)
 
       implicit none
       include 'pfrisk.h'
@@ -46,7 +48,9 @@ c  -------------------------------------------------------------------
      3     fltGrid_z(MAXFLT_DD,MAXFLT_AS), RupWidth, RupLength, dipavgd, 
      4     dirMed, dirSigma, len1, wid1, fs, fd, aveDPP_est, hypoX, hypoY 
       real hypoZ, medadj, sigadj, DPP, lnfd, lnfn, lnfp, Y, s, x, theta, 
-     1     rake, az, cDPP
+     1     rake, az, cDPP, hypoU
+      real Global_T, Global_U, U, T, Smax1, Smax2, PhiRed
+      integer Version
       
       data period     /
      1              0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500,
@@ -75,7 +79,44 @@ c     n2 is the last cell that makes up the rupture plane along strike
       
 c     Check the mag and period range for applying directivity      
 c     **** Later, make these input parameters ****
-      if (mag .lt. 5.6 .or. specT .lt. 0.50 ) return
+      if (mag .lt. 5.6 .or. specT .lt. 0.10 ) return
+
+c     Bayless and Abrahamson 2023 model, DIRFLAG = 40,41
+      if (dirflag .eq. 40 .or. dirflag .eq. 41 ) then                 
+c       Compute the coordinates of the hypocenter 
+        len1 = RupLength * fs
+        hypoU = len1 
+c       Convert global U to U (origin at the hypocenter loc)
+          U = Global_U - hypoU
+          T = Global_T      
+c       Other parameters
+          Smax1 = -len1
+          Smax2 = (1-fs)*RupLength
+c       set rake
+        if ( ftype .eq. 0. ) then
+          rake = 0.
+        elseif ( ftype .eq. 0.5 ) then
+          rake = 45.
+        elseif ( ftype .eq. 1. ) then
+          rake = 90
+        elseif ( ftype .eq. -0.5 ) then
+          rake = -45.
+        elseif ( ftype .eq. -1 ) then
+          rake = -90.
+        endif
+c       set Version
+        if ( dirflag .eq. 40 ) then
+          Version = 1
+        elseif ( dirflag .eq. 41 ) then
+          Version = 2
+        endif       
+c       compute 2024 model
+        call ruptdirct2024 ( mag, U, T, Ry0, Smax1, Smax2, Ztor, 
+     1                 Rake, specT, Version, lnfd, PhiRed)
+       medadj = lnfd
+       sigadj = PhiRed
+
+      endif
 
 c     Bayless and Somerville model, DIRFLAG = 30
       if (dirflag .eq. 30 ) then 

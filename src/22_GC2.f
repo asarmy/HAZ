@@ -2,7 +2,7 @@
        subroutine S22_GC2 (iLocX, iLocY, n2, n1, fltgrid_x1, fltgrid_y1, fltgrid_z1,
      1                 fltgrid_x2, fltgrid_y2, fltgrid_z2, fltgrid_x3, fltgrid_y3,
      2                 fltgrid_z3, fltgrid_x4, fltgrid_y4, fltgrid_z4, Rx, Ry, Ry0, 
-     3                 HWFlag, dipavgd)
+     3                 HWFlag, dipavgd, Global_T, Global_U)
       
        implicit none
        include 'pfrisk.h'

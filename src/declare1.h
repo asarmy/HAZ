@@ -116,6 +116,7 @@ c    Declarations for Main file
      2     magS7(MAX_FLT,MAX_S7), rateS7(MAX_FLT,MAX_S7),
      3     distS7(MAX_FLT,MAX_S7), DipS7(MAX_FLT,MAX_S7),
      4     mechS7(MAX_FLT,MAX_S7), version
+      real Global_T, Global_U
 
       integer iflagRead(17), nsc, MAX_FREQ, i
       parameter (MAX_FREQ=25)

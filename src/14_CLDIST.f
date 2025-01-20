@@ -5,7 +5,8 @@
      3             fltgrid_x2, fltgrid_y2, fltgrid_z2, fltgrid_x3, fltgrid_y3, fltgrid_z3,
      4             fltgrid_x4, fltgrid_y4, fltgrid_z4, fltgrid_Rrup, fltgrid_Rjb, dip, dipS7,
      5             distS7, HWFlag, n1, n2, icellRupstrike, icellRupdip, hypoDepth, distJB,
-     6             distRup, ZTOR, distSeismo, distepi, disthypo, dipavgd, Rx, Ry, Ry0)
+     6             distRup, ZTOR, distSeismo, distepi, disthypo, dipavgd, Rx, Ry, Ry0,  
+     7             Global_T, Global_U)
 
 c     This subroutine computes the distance parameters for the GMPEs
 c     (e.g. Rjb, Rrup, ZTOR, Rx, Ry, Ry0)
@@ -31,7 +32,7 @@ c     declarations passed in
 c     declarations passed out
       integer HWFlag, n1, n2, icellRupstrike, icellRupdip
       real hypoDepth, distJB, distRup, ZTOR, distSeismo, distepi, disthypo,
-     1     dipavgd, Rx, Ry, Ry0
+     1     dipavgd, Rx, Ry, Ry0, Global_T, Global_U
 
 c     declarations only used within subroutine
       integer i, j, celly, cellx
@@ -144,7 +145,7 @@ c         Global Coordinate System 2 method
           call S22_GC2 (iLocX, iLocY, n2, n1, fltgrid_x1, fltgrid_y1, fltgrid_z1,
      1              fltgrid_x2, fltgrid_y2, fltgrid_z2, fltgrid_x3, fltgrid_y3,
      2              fltgrid_z3, fltgrid_x4, fltgrid_y4, fltgrid_z4, Rx, Ry, Ry0,
-     3              HWFlag, dipavgd)
+     3              HWFlag, dipavgd, Global_T, Global_U)
 
 c         Calculate ZTOR
           ZTOR = fltgrid_z1(iLocY,iLocX)
